@@ -151,6 +151,17 @@ const output = products.filter(pd => pd.color !== "pink");
 console.log(output)
 
 
+// filter with three arguments
+
+const numbers2 = [1, 2, 3, 4, 5];
+const result = numbers2.filter(function (element,index,arr) {
+    console.log(index);
+    console.log(arr)
+    return element > 2;
+})
+console.log(result)
+
+
 // ফিল্টার এর ছোট ভাই  ফাইন্ড find
 
 // find হচ্ছে  যে শর্ত দেওয়া হয় সে শর্ত  ফুল ফিল করলে পুরো এলিমেন্টকে দিবে,
